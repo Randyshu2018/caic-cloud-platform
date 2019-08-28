@@ -1,0 +1,164 @@
+$color1: #3b5efe;
+$color2: #02cf96;
+$color3: #8b1de6;
+
+.eju-projectCombo {
+  &_header_title {
+    h1 {
+      font-size: 30px;
+      color: #16233d;
+    }
+    p {
+      font-size: 18px;
+      color: #939fa9;
+    }
+  }
+  &_body {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    .item {
+      width: 280px;
+      height: 485px;
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 1px;
+      margin-right: 60px;
+      padding: 35px 0 40px 0;
+      overflow: hidden;
+      position: relative;
+      .pkg-flag {
+        position: absolute;
+        top: 10px;
+        right: -33px;
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        background-color: #02cf96;
+        transform: rotate(-315deg);
+      }
+      .item-btn {
+        cursor: pointer;
+        &[disabled] {
+          cursor: not-allowed;
+          background-color: #d9d9d9 !important;
+          border-color: #d9d9d9;
+        }
+      }
+      &:nth-child(1) {
+        color: $color1;
+        border-color: $color1;
+        .item-title::after,
+        .item-btn {
+          background: $color1;
+        }
+        .item-price,
+        .item-day {
+          color: $color1;
+        }
+      }
+      &:nth-child(2) {
+        color: $color2;
+        border-color: $color2;
+        .item-title::after,
+        .item-btn {
+          background: $color2;
+        }
+        .item-price,
+        .item-day {
+          color: $color2;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(3) {
+        color: $color3;
+        border-color: $color3;
+        .item-title::after,
+        .item-btn {
+          background: $color3;
+        }
+        .item-price,
+        .item-day {
+          color: $color3;
+        }
+      }
+    }
+    .item-title {
+      color: #455263;
+      font-size: 20px;
+      margin-bottom: 28px;
+      font-weight: bold;
+      &::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin: 0 auto;
+        margin-top: 6px;
+        background: #666;
+      }
+    }
+    .item-original-price {
+      color: #999;
+      font-size: 15px;
+    }
+    .item-price {
+      font-size: 50px;
+      color: $color1;
+      font-weight: bold;
+      &::after,
+      &::before {
+        color: inherit;
+      }
+      &::after {
+        content: '元/年';
+        font-size: 12px;
+      }
+      &::before {
+        content: '￥';
+        font-size: 18px;
+      }
+    }
+    .item-day {
+      font-size: 10px;
+      color: $color1;
+      margin-bottom: 40px;
+    }
+    .item-content-row {
+      font-size: 14px;
+      color: #2b3b4d;
+      margin-bottom: 30px;
+      .dont {
+        color: #d5d9e6;
+      }
+    }
+    .item-btn {
+      color: #fff;
+      border-radius: 20px;
+      width: 104px;
+      height: 34px;
+      background: $color1;
+      font-size: 15px;
+      border-width: 0;
+      display: flex;
+      &::before {
+        width: 0;
+      }
+    }
+    .item:first-child {
+      .item-price {
+        &::after {
+          content: '元';
+        }
+      }
+    }
+  }
+}
+
+.choose-package {
+  max-width: 900px;
+}

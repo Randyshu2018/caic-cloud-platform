@@ -1,0 +1,21 @@
+<svg width="56px" height="70px" viewBox="0 0 56 70" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-810.000000, -435.000000)">
+            <g transform="translate(230.000000, 90.000000)">
+                <g transform="translate(365.000000, 295.000000)">
+                    <g transform="translate(111.000000, 50.000000)">
+                        <g transform="translate(104.000000, 0.000000)">
+                            <g>
+                                <rect id="Rectangle-2" stroke="#445870" stroke-width="4" x="2" y="2" width="52" height="66" rx="6"></rect>
+                                <rect id="Rectangle-2" stroke="#445870" stroke-width="4" x="10.96" y="10.4848485" width="34.08" height="41.642187" rx="4"></rect>
+                                <rect id="Rectangle-2" fill="#C5D0FF" x="12.44" y="11.7272727" width="31.1200008" height="39.1500015"></rect>
+                                <rect id="Rectangle-6" fill="#445870" x="21.28" y="57.2727273" width="13.44" height="5.3030303" rx="2.65151515"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

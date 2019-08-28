@@ -1,0 +1,118 @@
+.home-body {
+  background-color: #fff;
+}
+
+.welcome-to-caic {
+  height: 152px;
+  background: #08081e url(./assets/welcome/welcome-to-caic.png) center top no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .welcome-to-caic {
+    background-image: url(./assets/welcome/welcome-to-caic@2x.png);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  background-image: url(./assets/welcome/welcome-to-caic@3x.png);
+}
+
+.sign-projects-search {
+  padding: 60px 0 56px 70px;
+  font-size: 15px;
+}
+
+.sign-projects-body {
+  padding: 49px 0 20px 70px;
+  border-top: 1px solid #eff3f8;
+}
+
+.sign-projects {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    float: left;
+    width: 370px;
+    height: 202px;
+    margin: 0 40px 46px 0;
+    border-radius: 10px;
+  }
+  .project {
+    padding: 25px 25px 0;
+    color: #828baa;
+    box-shadow: 0 5px 21px 3px #e9eaed;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      border-color: #3b5efe;
+    }
+    .project-name {
+      font-size: 20px;
+      margin-bottom: 26px;
+      font-weight: bold;
+      color: #2b3b4d;
+      line-height: 28px;
+    }
+    .item {
+      margin-top: 10px;
+    }
+    .date-link {
+      margin-top: 22px;
+      .date {
+        font-size: 12px;
+      }
+    }
+    .version {
+      position: absolute;
+      top: 10px;
+      right: -33px;
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+      background-color: #3b5efe;
+      transform: rotate(-315deg);
+    }
+  }
+  .create-sign-project {
+    padding-top: 51px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #c8cbd8;
+    border: 1px dashed #d3d8db;
+    &:hover {
+      color: #3b5efe;
+      border-color: #3b5efe;
+      .add-img {
+        background-image: url(./assets/add-hover.svg);
+      }
+    }
+    .add-img {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 17px;
+      background: url(./assets/add.svg) no-repeat;
+    }
+  }
+}
+
+.trial-modal {
+  .trial-modal-title {
+    text-align: center;
+  }
+  .trial-modal-tip {
+    margin: 15px auto 25px;
+  }
+  .trial-modal-btns {
+    button {
+      //
+    }
+  }
+}

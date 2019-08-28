@@ -1,0 +1,39 @@
+@import '../../style/common';
+
+.task-wrapper {
+  .Filter {
+    margin-top: 30px;
+    padding: 30px 50px;
+    background-color: #fff;
+    line-height: 32px;
+  }
+  .status {
+    position: relative;
+    &::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: #00e4a5;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .unstatus {
+    position: relative;
+    color: #fa2242;
+    &::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: #fa2242;
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

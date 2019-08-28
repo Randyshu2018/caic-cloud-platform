@@ -1,0 +1,54 @@
+.task-detail-wrapper {
+  .Filter {
+    margin-bottom: 30px;
+  }
+  .Sheet-module {
+    border: 1px solid #f5f6fc;
+    padding: 20px;
+    margin-top: 32px;
+    border-radius: 6px;
+  }
+  .Sheet-module__upload {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #445870;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .Sheet-module__upload__btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .Sheet-module__upload__status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Sheet-module__upload__replace,
+  .Sheet-module__upload__view {
+    color: #3b5efe;
+    cursor: pointer;
+  }
+  .Sheet-module__upload__view {
+    margin-left: 25px;
+  }
+  .Sheet-module_bar {
+    width: 100%;
+    height: 5px;
+    background-color: #fa2242;
+    margin-top: 13px;
+    &.uploaded {
+      background-color: #00e4a5;
+    }
+  }
+  .Sheet-module__bottom {
+    font-size: 13px;
+    color: #8fa1b7;
+    margin: 0;
+  }
+  .Sheet-module__bottom_first {
+    margin-top: 30px;
+  }
+}

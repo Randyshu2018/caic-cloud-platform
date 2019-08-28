@@ -1,0 +1,89 @@
+.deposit {
+  color: #445870;
+  background-color: #fafbfc;
+  box-shadow: 0 2px 5px 5px rgba(245, 246, 252, 0.56);
+  border-radius: 8px 8px 0px 0px;
+  // padding: 30px 30px 40px;
+  margin-bottom: 16px;
+  .deposit-search {
+    padding: 30px 30px 40px;
+    margin: 0px !important;
+    background-color: #fff;
+    border-radius: 8px 8px 0px 0px;
+    .search-name {
+      vertical-align: middle;
+    }
+    .deposit-searchCol {
+      padding: 0 !important;
+      height: 30px;
+      width: 73px;
+      line-height: 30px;
+      color: #445870;
+      font-size: 14px;
+    }
+    .deposit-searchCol:nth-child(2) {
+      width: 52px;
+    }
+    .searchButton {
+      float: right;
+      right: 55px;
+      top: 4px;
+    }
+    .ant-col {
+      padding: 0 !important;
+    }
+    .ant-col-6 {
+      min-width: 288px;
+    }
+
+    .ant-form-item-control-wrapper {
+      width: 200px;
+    }
+  }
+  .depositTable {
+    background-color: #fff;
+    margin-top: 10px;
+    .depositUl {
+      list-style: none;
+      padding-bottom: 20px;
+      padding: 30px;
+      border-bottom: 1px #eff3f8 solid;
+      border-radius: 8px 8px 0px 0px;
+      li {
+        width: 20%;
+        display: inline-block;
+        img {
+          width: 12px;
+          height: 12px;
+          margin-left: 5px;
+          position: relative;
+          top: -1px;
+        }
+        section {
+          color: #b1bbc3;
+        }
+        p {
+          font-size: 18px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+.depositBox {
+  .form-item_1111 {
+    width: 200%;
+  }
+  .ColBefore::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #f5222d;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+  }
+  .money {
+    min-width: 200px;
+  }
+}

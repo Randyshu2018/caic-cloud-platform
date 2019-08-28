@@ -1,0 +1,29 @@
+.new-customer-body {
+}
+
+.new-customer-form {
+  .space {
+    display: inline-block;
+    width: 24px;
+  }
+}
+
+.btn-cancel {
+  color: #fff !important;
+  background-color: #c1c7de !important;
+  border-color: transparent !important;
+  outline: 0;
+}
+
+.add-customer-memo {
+  position: relative;
+  .delete-memo {
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    width: 50px;
+    height: 50px;
+    background: url('./assets/delete-memo.svg') no-repeat;
+  }
+  cursor: pointer;
+}

@@ -1,0 +1,180 @@
+@import 'style.scss';
+$titleColor: '#445870';
+$titleFontsize: '18px';
+.rent-container {
+  .rent {
+    background-color: #fff;
+    box-shadow: 0 2px 5px 5px rgba(245, 246, 252, 0.56);
+    border-radius: 8px;
+    padding: 30px 30px 40px;
+    margin-bottom: 16px;
+    .rent-search {
+      padding-bottom: 30px;
+      margin-left: 0px !important;
+      .search-name {
+        vertical-align: middle;
+      }
+      .rent-searchCol {
+        padding: 0 !important;
+        height: 30px;
+        width: 52px;
+        line-height: 30px;
+        color: #445870;
+        font-size: 14px;
+      }
+      .rent-searchCol:nth-child(1) {
+        width: 66px;
+      }
+    }
+
+    .monitor {
+      padding: 0 0 20px 0px;
+      width: 100%;
+      h2 {
+        color: #445870;
+        font-size: 18px;
+      }
+    }
+    .searchButton {
+      float: right;
+    }
+  }
+
+  .newRentBut,
+  .newRentBut:hover {
+    width: 90px;
+    height: 34px;
+    color: #fff;
+    border: none;
+    background: #50e3c2;
+    padding: 0;
+    float: right;
+    right: 30px;
+    top: 24px;
+  }
+
+  .rentList {
+    background-color: #fff;
+    box-shadow: 0 2px 5px 5px rgba(245, 246, 252, 0.56);
+    border-radius: 8px;
+    .list {
+      padding: 0 0 18px 0px;
+      h2 {
+        color: #445870;
+        font-size: 18px;
+        padding: 30px 0 20px 30px;
+        margin-bottom: 0px;
+        display: inline-block;
+      }
+      hr {
+        height: 1px;
+        background: rgba(239, 243, 248, 1);
+        transform: scale(1, 0.5);
+        top: 0;
+        left: 0;
+      }
+      .Pagination {
+        text-align: center;
+        margin: 48px 0 20px 0px;
+      }
+    }
+  }
+
+  // 新建表单
+  .roomInfo {
+    width: 700px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(250, 251, 252, 1);
+    color: #8fa1b7;
+    padding-left: 30px;
+  }
+  .form-item_contactPhone {
+    margin-bottom: 15px !important;
+  }
+  .editablebg {
+    background: rgba(250, 251, 252, 1);
+  }
+
+  // 覆盖antd样式
+  .ant-drawer-header {
+    border: none !important;
+  }
+  .ant-drawer-body {
+    padding: 0 !important;
+  }
+  .ant-drawer-wrapper-body {
+    padding-bottom: 65px;
+  }
+  .form-item_lessee,
+  .form-item_legalPerson,
+  .form-item_contactName,
+  .form-item_payNumberTitle,
+  .form-item_signingDate,
+  .form-item_endSignDate {
+    padding: 0px 15px 0px 30px !important;
+    margin-bottom: 0px;
+  }
+  .form-item_industry,
+  .form-item_signer,
+  .form-item_contactPhone,
+  .form-item_depositAmt,
+  .form-item_singlePrice,
+  .form-item_beginSignDate {
+    padding: 0px 30px 0px 15px !important;
+    margin-bottom: 0px;
+  }
+  .form-item_contractNO {
+    width: 200%;
+    margin-bottom: 0px;
+    padding: 0px 30px;
+  }
+  .form-item_payNumberTitle .ant-form-item-label::before,
+  .form-item_signingDate .ant-form-item-label::before,
+  .form-item_beginSignDate .ant-form-item-label::before,
+  .form-item_endSignDate .ant-form-item-label::before,
+  .form-item_depositAmt .ant-form-item-label::before,
+  .form-item_contactPhone .ant-form-item-label::before,
+  .form-item_singlePrice .ant-form-item-label::before,
+  .editableTable2 .ant-row .floorName::before,
+  .editableTable2 .ant-row .roomName::before,
+  .editableTable2 .ant-row .area::before,
+  .editableTable2 .ant-row .buildingName::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #f5222d;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+  }
+  .form-item_signingDate .ant-calendar-picker,
+  .form-item_beginSignDate .ant-calendar-picker,
+  .form-item_endSignDate .ant-calendar-picker {
+    width: 100%;
+  }
+  .form-item_businessLicenseUrl {
+    padding: 0px 30px;
+    margin-bottom: 0px;
+  }
+  .ant-upload.ant-upload-select-picture-card,
+  .ant-upload-list-picture-card .ant-upload-list-item {
+    width: 192px !important;
+    height: 142px !important;
+    margin-right: 30px !important;
+    display: inline-table;
+    float: left;
+  }
+  .clearfix {
+    padding-left: 30px !important;
+  }
+  .ant-table-placeholder {
+    padding: 0px !important;
+  }
+  .ant-row .ant-form-item {
+    width: 100%;
+  }
+  .ant-form-explain {
+    display: inline;
+  }
+}

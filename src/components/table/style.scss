@@ -1,0 +1,27 @@
+.EJU-table {
+  width: 100%;
+  p {
+    margin: 0;
+  }
+  background-color: #fff;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  .empty-text {
+    height: 100px;
+    line-height: 100px;
+  }
+  &__console {
+    // display: none;
+    > * {
+      margin: 0 5px;
+    }
+  }
+  .EJU-table__console span.text-span:hover{
+    text-decoration: underline;
+  }
+  .ant-table-tbody .ant-table-row:hover {
+    .EJU-table__console {
+      display: block;
+    }
+  }
+}

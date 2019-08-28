@@ -1,0 +1,15 @@
+.tabList {
+  padding: 0 0 10px 24px;
+  .tab {
+    display: inline-block;
+    width: 20%;
+    font-size: 16px;
+    span {
+      padding: 0px 2px 1px 2px;
+    }
+  }
+  .selectTab {
+    color: #3b5efe;
+    border-bottom: 2px #3b5efe solid;
+  }
+}

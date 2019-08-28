@@ -1,0 +1,102 @@
+.hformContainer {
+  background-color: #ffffff;
+  padding: 30px 0px 10px 0px;
+  margin: 30px 0px;
+  // padding:20px 30px;
+  width: 100%;
+  // margin:0px;
+  position: relative;
+  .ant-input-group-addon {
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    width: 100px;
+  }
+  input {
+    width: 160px !important;
+  }
+  .specialInput {
+    width: 200px !important;
+  }
+  .inputContainer {
+    width: 160px;
+    position: relative;
+    .afterUnit {
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+    }
+  }
+}
+
+.bformContainer {
+  background-color: #ffffff;
+  padding: 30px 0px 30px 0px;
+  margin: 30px 0px;
+  // padding:20px 30px;
+  width: 100%;
+
+  .inputContainer {
+    input {
+      width: 160px !important;
+    }
+    position: relative;
+    width: 160px;
+    .afterUnit {
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+    }
+    .afterDelete {
+      position: absolute;
+      right: -25px;
+      bottom: 0;
+    }
+    img {
+      //   margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+  .buttonAdd {
+    width: 100%;
+    background-color: #ffffff;
+    border: dashed 1px #3b5efe;
+    color: #3b5efe;
+  }
+}
+
+.offormContainer {
+  background-color: #ffffff;
+  padding: 30px 0px 30px 0px;
+  margin: 30px 0px;
+  // padding:20px 30px;
+  width: 100%;
+
+  .inputContainer {
+    input {
+      // width: 160px !important;
+    }
+    position: relative;
+    //   width: 160px;
+    .afterUnit {
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+    }
+    .afterDelete {
+      position: absolute;
+      right: -25px;
+      bottom: 0;
+    }
+    img {
+      //   margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+  .buttonAdd {
+    width: 100%;
+    background-color: #ffffff;
+    border: dashed 1px #3b5efe;
+    color: #3b5efe;
+  }
+}

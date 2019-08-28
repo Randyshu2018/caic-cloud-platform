@@ -1,0 +1,247 @@
+export default {
+  经营收入: [
+    {
+      key: 'COMMERCIAL_JYSR_ZJSR',
+      title: '租金收入',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_JYSR_WYF',
+      title: '物业费',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_JYSR_TCF',
+      title: '停车费',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_JYSR_GGF',
+      title: '广告费',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_JYSR_QTSR',
+      title: '其他收入',
+      after: '元',
+    },
+  ],
+  经营成本: [
+    {
+      key: 'COMMERCIAL_JYCB_YYCB',
+      title: '营业成本',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_JYCB_TGCB',
+      title: '推广成本',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_JYCB_RGCB',
+      title: '人工成本',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_JYCB_GZCB',
+      title: '改造成本',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_JYCB_QTCB',
+      title: '其他成本',
+      after: '元',
+    },
+  ],
+  营业净收入NOI: [
+    {
+      key: 'COMMERCIAL_LR_NOI',
+      title: '营业净收入NOI',
+      after: '元',
+    },
+  ],
+  收入相关: [
+    {
+      key: 'COMMERCIAL_SRXG_XSE',
+      title: '销售额',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_SRXG_XSPX',
+      title: '销售坪效',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_SRXG_HYXSE',
+      title: '会员销售额',
+      span: 12,
+      after: '元',
+      rules: [{ required: false }],
+    },
+    {
+      key: 'COMMERCIAL_SRXG_HYZS',
+      title: '会员总数',
+      span: 12,
+      after: '人',
+      rules: [{ required: false }],
+    },
+    {
+      key: 'COMMERCIAL_SRXG_ZLDXSE',
+      title: '主力店销售额',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_SRXG_ZSB',
+      title: '租售比',
+      span: 12,
+      after: '%',
+    },
+    {
+      key: 'COMMERCIAL_SRXG_KDJ',
+      title: '客单价',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_SRXG_KLL',
+      title: '客流量',
+      span: 12,
+      after: '人',
+      rules: [{ required: false }],
+    },
+    {
+      key: 'COMMERCIAL_SRXG_TDL',
+      title: '提袋率',
+      after: '%',
+      rules: [{ required: false }],
+    },
+  ],
+  租约情况: [
+    {
+      key: 'COMMERCIAL_ZYQK_CZL',
+      title: '出租率',
+      after: '%',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_KYMJ',
+      title: '开业面积',
+      span: 12,
+      after: '㎡',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_KYL',
+      title: '开业率',
+      span: 12,
+      after: '%',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_DYQYZMJ',
+      title: '当月签约总面积',
+      span: 12,
+      after: '㎡',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_DYQYZJZE',
+      title: '当月签约租金总额',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_YQYZMJ',
+      title: '已签约总面积',
+      span: 12,
+      after: '㎡',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_YQYZJZE',
+      title: '已签约租金总额',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_ZLZHZMJ',
+      title: '主力租户总面积',
+      span: 12,
+      after: '㎡',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_ZLZHZJZE',
+      title: '主力租户租金总额',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_YNDQZHZMJ',
+      title: '一年内到期租户总面积',
+      span: 12,
+      after: '㎡',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_YNDQZHZJZE',
+      title: '一年内到期租户租金总额',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_LNDQZHZMJ',
+      title: '二年内到期租户总面积',
+      span: 12,
+      after: '㎡',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_LNDQZHZJZE',
+      title: '二年内到期租户租金总额',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_SNDQZHZMJ',
+      title: '三年内到期租户总面积',
+      span: 12,
+      after: '㎡',
+    },
+    {
+      key: 'COMMERCIAL_ZYQK_SNDQZHZJZE',
+      title: '三年内到期租户租金总额',
+      span: 12,
+      after: '元',
+    },
+  ],
+  租金情况: [
+    {
+      key: 'COMMERCIAL_ZJQK_ZJSJL',
+      title: '租金收缴率',
+      after: '%',
+    },
+    {
+      key: 'COMMERCIAL_ZJQK_ZJSJZE',
+      title: '租金收缴总额',
+      span: 12,
+      after: '元',
+    },
+    {
+      key: 'COMMERCIAL_ZJQK_ZJZPX',
+      title: '总租金坪效',
+      span: 12,
+      after: '元',
+    },
+  ],
+  其他: [
+    {
+      key: 'COMMERCIAL_QT_RJGLMJ',
+      title: '人均管理面积',
+      after: '㎡',
+    },
+  ],
+};

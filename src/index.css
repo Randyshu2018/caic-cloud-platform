@@ -1,0 +1,85 @@
+@import '~normalize.css';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica,
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+  color: #445870 !important;
+}
+
+@font-face {
+  /* font-test*/
+  font-family: DIN_Alternate_Bold;
+  src: url('./assets/font/DIN_Alternate_Bold.ttf');
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.box-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.breadcrumb {
+  margin: 10px 0 30px !important;
+  font-size: 18px !important;
+}
+
+.breadcrumb a {
+  color: #445870 !important;
+}
+
+.ant-table thead tr th {
+  color: #8fa1b7;
+  border-bottom: 0;
+  background-color: #fafbfc;
+}
+
+.ant-table tbody tr td {
+  color: #445870;
+  border-bottom: 1px solid #eff3f8 !important;
+}
+
+.ant-table tbody tr:hover td {
+  background-color: #fafbfc;
+}
+
+.ant-table-placeholder {
+  border-bottom-color: #eff3f8 !important;
+}
+
+.ant-table ~ .ant-table-pagination.ant-pagination {
+  float: none !important;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.ant-btn-primary {
+  color: #fff !important;
+  background-color: #3b5efe !important;
+  border-color: #3b5efe !important;
+}
+
+.fr {
+  float: right;
+}
+
+.sln {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

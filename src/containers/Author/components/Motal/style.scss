@@ -1,0 +1,45 @@
+.inputBlockContainer{
+    background-color: #ffffff;
+    padding:30px 50px;
+    margin:30px 0px;
+    display: flex;
+    .inputItem{
+       flex: 4;
+       .ant-input-group-addon{
+           border: none;
+           background-color: transparent;
+       }
+    }
+    .PaddingLeft30{
+        padding-left: 30px;
+    }
+    .inputItemRight{
+      flex: 1;
+    }
+}
+.simple{
+    padding:20px 30px;
+    max-width: 700px;
+    margin:0px;
+    position: relative;
+    .ant-input-group-addon{
+        border: none;
+        background-color: transparent;
+        text-align: right;
+        width: 100px;
+    }
+    input{
+        width: 300px!important;
+    }
+    textarea{
+        // width: 400px!important;
+    }
+
+    .oneKeyCopy{
+        position: absolute;
+        bottom:28px;
+        right:47px;
+        cursor: pointer;
+        color:#3b5efe
+    }
+}

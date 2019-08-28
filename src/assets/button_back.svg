@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>返回</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="运营数据上传－酒店" transform="translate(-1307.000000, -208.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="输入" transform="translate(260.000000, 169.000000)">
+                <g id="查询" transform="translate(1030.000000, 30.000000)">
+                    <g id="返回" transform="translate(17.000000, 9.000000)">
+                        <g id="Group-3">
+                            <path d="M12.5976443,3.13470145 L8.65363781,3.13470145 L8.65363781,0 L0,4.23352445 L8.65361472,8.46707147 L8.65361475,5.33954967 L12.9242694,5.33954967 C16.3047409,5.33954967 17.9946074,6.72488081 17.9946074,9.49556564 C17.9946074,12.3622048 16.2484843,13.7951744 12.7555227,13.7951744 L8.65361472,13.7951744 L8.65361472,16 L12.8568676,16 C17.6189482,16 20,13.9016949 20,9.70510717 C20,5.32507752 17.5327865,3.13470145 12.5976443,3.13470145 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

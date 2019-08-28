@@ -1,0 +1,276 @@
+{
+  "name": "caic-cloud-platform",
+  "version": "2.1.0",
+  "private": true,
+  "description": "an electron project of caic cloud platform",
+  "author": "Randy Shu <randyshu2018@gmail.com>",
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "antd": "3.20.0",
+    "autoprefixer": "7.1.6",
+    "axios": "^0.19.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-polyfill": "^6.26.0",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "chalk": "1.1.3",
+    "classnames": "^2.2.6",
+    "copy-to-clipboard": "^3.2.0",
+    "css-loader": "0.28.7",
+    "dotenv": "4.0.0",
+    "dotenv-expand": "4.2.0",
+    "echarts": "^4.2.1",
+    "electron-debug": "^3.0.1",
+    "electron-is-dev": "^1.1.0",
+    "electron-updater": "^4.1.2",
+    "eslint": "4.10.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "2.39.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.4.0",
+    "events": "^3.0.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.5",
+    "fs-extra": "3.0.1",
+    "history": "4.7.2",
+    "html-webpack-plugin": "2.29.0",
+    "jest": "20.0.4",
+    "js-cookie": "^2.2.1",
+    "lodash": "4.17.10",
+    "mobx": "^4.5.0",
+    "mobx-react": "^6.1.1",
+    "mobx-react-lite": "^1.4.1",
+    "moment": "^2.18.1",
+    "normalize.css": "8.0.0",
+    "nprogress": "^0.2.0",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-loader": "2.0.8",
+    "prop-types": "15.6.2",
+    "qs": "6.5.2",
+    "raf": "3.4.0",
+    "react": "^16.8.6",
+    "react-dev-utils": "5.0.1",
+    "react-dom": "^16.8.6",
+    "react-redux": "5.0.7",
+    "react-router-dom": "4.3.1",
+    "redux": "4.0.0",
+    "redux-logger": "3.0.6",
+    "redux-thunk": "2.3.0",
+    "resolve": "1.6.0",
+    "style-loader": "0.19.0",
+    "sw-precache-webpack-plugin": "0.11.4",
+    "url-loader": "0.6.2",
+    "url-parse": "1.4.1",
+    "webpack": "3.8.1",
+    "webpack-dev-server": "2.9.4",
+    "webpack-manifest-plugin": "1.3.2",
+    "whatwg-fetch": "2.0.3"
+  },
+  "scripts": {
+    "start": "nf start",
+    "react-start": "cross-env NODE_ENV=development node config/start",
+    "build": "node scripts/build.js && electron-builder --mac --win && node scripts/build-server",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "server": "node scripts/build-server",
+    "test": "node scripts/test.js --env=jsdom",
+    "precommit": "pretty-quick --staged --single-quote",
+    "electron": "electron .",
+    "electron-start": "node src/electron-wait-react"
+  },
+  "main": "src/electron-starter.js",
+  "homepage": "./",
+  "build": {
+    "productName": "CAIC云平台",
+    "appId": "caic-cloud-platform",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "build/**/*",
+      "src/electron-starter.js",
+      "src/updater.js"
+    ],
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://localhost:8080"
+      }
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "mac": {
+      "icon": "dist/icons/icon-mac.jpg",
+      "artifactName": "${productName}_setup_${version}.${ext}"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "dist/icons/icon-win.jpg",
+      "artifactName": "${productName}_setup_${version}.${ext}"
+    },
+    "linux": {
+      "icon": "dist/icons",
+      "artifactName": "${productName}_setup_${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "runAfterFinish": false
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node",
+      "mjs"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-react"
+      ],
+      [
+        "@babel/preset-env",
+        {
+          "modules": false,
+          "loose": true,
+          "useBuiltIns": "usage",
+          "targets": {
+            "ie": 9,
+            "browsers": [
+              "last 5 versions",
+              "safari >= 7",
+              "not ie < 9"
+            ]
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-proposal-export-default-from",
+      "@babel/plugin-transform-runtime",
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "libraryDirectory": "es",
+          "style": "css"
+        },
+        "antd"
+      ],
+      [
+        "import",
+        {
+          "libraryName": "lodash",
+          "libraryDirectory": "",
+          "camel2DashComponentName": false
+        },
+        "lodash"
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 100,
+    "arrowParens": "always"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/polyfill": "7.0.0-beta.51",
+    "@babel/preset-env": "7.0.0-beta.51",
+    "@babel/preset-react": "7.0.0-beta.51",
+    "@babel/preset-stage-1": "7.0.0-beta.51",
+    "@babel/preset-stage-2": "7.0.0-beta.51",
+    "@types/react": "^16.4.1",
+    "babel-loader": "8.0.0-beta.3",
+    "babel-plugin-import": "1.8.0",
+    "compression": "^1.7.4",
+    "cross-env": "^5.2.0",
+    "electron": "^6.0.3",
+    "electron-builder": "^21.2.0",
+    "express": "^4.17.1",
+    "foreman": "^3.0.1",
+    "happypack": "^5.0.1",
+    "http-proxy-middleware": "^0.19.1",
+    "http-server": "^0.11.1",
+    "husky": "0.14.3",
+    "ip": "^1.1.5",
+    "node-sass": "4.9.0",
+    "open": "^6.4.0",
+    "prettier": "1.13.5",
+    "pretty-quick": "1.6.0",
+    "sass-loader": "7.0.3",
+    "shelljs": "^0.8.3",
+    "svgo": "^1.1.1",
+    "svgo-loader": "^2.2.0",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.2"
+  }
+}

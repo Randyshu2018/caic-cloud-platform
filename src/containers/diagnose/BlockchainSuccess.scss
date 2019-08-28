@@ -1,0 +1,24 @@
+.blockchain-success-body {
+  display: inline-block;
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 33px;
+    .icon-check-circle {
+      margin: 0 16px 0 -60px;
+      color: #3b5efe;
+      font-size: 44px;
+      vertical-align: middle;
+    }
+  }
+  .tip {
+    margin: 10px 0 30px;
+    font-size: 18px;
+    color: #828baa;
+    line-height: 25px;
+  }
+  .time {
+    margin-bottom: 27px;
+    color: #3b5efe;
+  }
+}

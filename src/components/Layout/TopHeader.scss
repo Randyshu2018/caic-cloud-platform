@@ -1,0 +1,30 @@
+.top-header {
+  padding-left: 40px;
+  background-color: rgba(51, 55, 68, 1);
+  &.ant-layout-header {
+    height: 70px;
+  }
+  .logo {
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 1;
+    img {
+      max-width: 100%;
+    }
+  }
+  .order {
+    &:hover {
+      cursor: pointer;
+    }
+    color: #ffffff;
+    margin-right: 30px;
+    .anticon {
+      margin-right: 3px;
+      font-size: 22px;
+    }
+  }
+  .header-login-user {
+    float: right;
+  }
+}

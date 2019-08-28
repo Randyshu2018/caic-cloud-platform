@@ -1,0 +1,116 @@
+@import '../../style/variables';
+
+.stepGenContainer {
+  .buttonPrimary {
+    .ant-btn-primary.disabled,
+    .ant-btn-primary[disabled],
+    .ant-btn-primary.disabled:hover,
+    .ant-btn-primary[disabled]:hover,
+    .ant-btn-primary.disabled:focus,
+    .ant-btn-primary[disabled]:focus,
+    .ant-btn-primary.disabled:active,
+    .ant-btn-primary[disabled]:active,
+    .ant-btn-primary.disabled.active,
+    .ant-btn-primary[disabled].active {
+      color: rgba(0, 0, 0, 0.25);
+      background-color: #f5f5f5;
+      border-color: #d9d9d9;
+    }
+  }
+}
+
+.stepSelectProjectContainer {
+  .ant-btn-primary.disabled,
+  .ant-btn-primary[disabled],
+  .ant-btn-primary.disabled:hover,
+  .ant-btn-primary[disabled]:hover,
+  .ant-btn-primary.disabled:focus,
+  .ant-btn-primary[disabled]:focus,
+  .ant-btn-primary.disabled:active,
+  .ant-btn-primary[disabled]:active,
+  .ant-btn-primary.disabled.active,
+  .ant-btn-primary[disabled].active {
+    color: rgba(0, 0, 0, 0.25);
+    background-color: #f5f5f5;
+    border-color: #d9d9d9;
+  }
+}
+
+.stepUpdateProjectContainer {
+  .projectName {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .projectBase {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 20px 0;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px #eff3f8 solid;
+  }
+}
+
+.authorDetailContainer {
+  .projectName {
+    display: flex;
+    .eLeft {
+      flex: 1;
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: bold;
+    }
+    .eRight {
+      flex: 1;
+      text-align: right;
+    }
+  }
+  .projectBase {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 20px 0;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px #eff3f8 solid;
+  }
+}
+
+.copy-private-key {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3b5efe;
+  user-select: none;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background-color: #3b5efe;
+}
+.selectChainDataContainer {
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    min-width: 100px;
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 20% 0;
+}
+
+.asset-project-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #445870;
+  line-height: 30px;
+}

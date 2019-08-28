@@ -1,0 +1,116 @@
+.confirm-income {
+  margin-top: -18px;
+
+  .confirm-title {
+    height: 50px;
+    line-height: 50px;
+    color: #8fa1b7;
+    background: rgba(250, 251, 252, 1);
+    padding-left: 30px;
+  }
+
+  .confirm-info {
+    padding: 30px 25px;
+
+    .confirm-building {
+      border-radius: 6px;
+      border: 1px solid #f3f3f3;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      height: 40px;
+      line-height: 40px;
+      background: rgba(249, 250, 250, 1);
+      padding: 0px 20px;
+
+      span {
+        float: right;
+        color: #3b5efe;
+      }
+
+      div {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(199, 209, 220, 1);
+      }
+    }
+
+    .infoList {
+      .ant-col-24 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px;
+        border-bottom: 1px solid #f3f3f3;
+        div {
+          height: 40px;
+          line-height: 40px;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 500;
+          color: rgba(68, 88, 112, 1);
+        }
+      }
+      .ant-col-24:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .infoLable {
+      background: rgba(249, 250, 250, 1);
+      margin-bottom: 20px;
+      padding: 15px 25px 20px 25px;
+      border-radius: 6px;
+
+      .ant-col {
+        div {
+          margin-top: 5px;
+        }
+
+        div:nth-child(1) {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(199, 209, 220, 1);
+        }
+
+        div:nth-child(2) {
+          font-size: 14px;
+          font-weight: 500;
+          color: rgba(68, 88, 112, 1);
+        }
+      }
+    }
+
+    .yearlist {
+      width: 100%;
+      overflow-x: scroll;
+      margin-top: 10px;
+
+      .yeartable {
+        min-width: max-content;
+
+        .ant-form-item,
+        .editInput {
+          width: 70px;
+        }
+      }
+    }
+    // .yearlist::-webkit-scrollbar {
+    //   display: none;
+    // }
+
+    .total {
+      text-align: right;
+      font-size: 16px;
+      font-weight: 500;
+      color: rgba(68, 88, 112, 1);
+      margin-top: 20px;
+    }
+
+    button {
+      width: 80px;
+      color: #3b5efe;
+      margin-top: 20px;
+    }
+  }
+}

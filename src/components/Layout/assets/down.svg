@@ -1,0 +1,16 @@
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>tab_下拉</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-205.000000, -313.000000)" fill="#FFFFFF">
+            <g transform="translate(0.000000, 118.000000)">
+                <g>
+                    <g transform="translate(205.000000, 195.000000)">
+                        <g>
+                            <path d="M0.129375447,0.827435134 L4.67896521,5.85395513 C4.85521297,6.04868162 5.14478666,6.04868162 5.3210459,5.85395513 L9.87062417,0.827435134 C10.1494159,0.519420019 9.94787984,0 9.54958958,0 L0.450421535,0 C0.0521197801,0 -0.149416247,0.519420019 0.129375447,0.827435134 Z" id="路径"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

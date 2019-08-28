@@ -1,0 +1,86 @@
+.income {
+  color: #445870;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 5px rgba(245, 246, 252, 0.56);
+  border-radius: 8px;
+  // padding: 30px 30px 40px;
+  margin-bottom: 16px;
+  .income-search {
+    padding: 20px 30px 30px 30px;
+    margin-left: 0px !important;
+    .search-name {
+      vertical-align: middle;
+    }
+    .income-searchCol {
+      padding: 0 !important;
+      height: 30px;
+      width: 190px;
+      line-height: 30px;
+      color: #445870;
+      font-size: 14px;
+    }
+    .income-searchCol:nth-child(2) {
+      width: 265px;
+    }
+    .exportExc {
+      float: right;
+      right: 40px;
+      button {
+        color: #fff;
+        background: #00e4a5;
+        border: none;
+      }
+    }
+    .searchButton {
+      float: right;
+      right: 55px;
+    }
+    .income-list {
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba(68, 88, 112, 1);
+      line-height: 28px;
+      padding-bottom: 20px;
+    }
+  }
+  .incomeUl {
+    list-style: none;
+    padding-bottom: 20px;
+    padding: 30px;
+    border-bottom: 1px #eff3f8 solid;
+    li {
+      width: 20%;
+      display: inline-block;
+      img {
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+        position: relative;
+        top: -1px;
+      }
+      section {
+        color: #b1bbc3;
+      }
+      p {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .income-table .ant-table-content .ant-table-body {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  // .income-table .ant-table-content .ant-table-body::-webkit-scrollbar {
+  //   display: none;
+  // }
+  .income-table .ant-table-content .ant-table-body table {
+    min-width: max-content;
+  }
+  .income-table .ant-table-content .ant-table-body table tr {
+    cursor: pointer;
+  }
+  .ant-select-selection--single {
+    min-width: 60px;
+  }
+}

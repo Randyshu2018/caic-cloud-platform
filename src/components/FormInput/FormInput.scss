@@ -1,0 +1,17 @@
+.form-input-container {
+  position: relative;
+  input {
+    padding-right: 1rem;
+  }
+  .eye-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    z-index: 1;
+    img {
+      width: 1.5rem;
+      z-index: 10;
+      cursor: pointer;
+    }
+  }
+}

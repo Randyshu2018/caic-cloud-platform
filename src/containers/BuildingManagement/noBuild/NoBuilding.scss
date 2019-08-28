@@ -1,0 +1,43 @@
+.no-build-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  img {
+    display: block;
+    width: 160px;
+    height: 161px;
+    margin-bottom: 20px;
+  }
+
+  div {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(68, 88, 112, 1);
+    line-height: 28px;
+  }
+
+  span {
+    font-size: 16px;
+    color: rgba(147, 159, 169, 1);
+    line-height: 22px;
+    padding: 10px 0 25px 0;
+  }
+
+  button {
+    width: 140px;
+    height: 40px;
+    background: rgba(59, 94, 254, 1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}

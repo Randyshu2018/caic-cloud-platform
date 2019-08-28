@@ -1,0 +1,42 @@
+.property {
+  .title {
+    border-bottom: 1px solid #f0f1f5;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  .ant-input-number {
+    width: 100%;
+  }
+  .handleSys {
+    .ant-btn {
+      margin-left: 20px;
+    }
+    .ant-btn-upload {
+      background: #fff;
+      color: #333;
+    }
+  }
+
+  .list-header {
+    margin-bottom: 30px;
+    p {
+      color: red;
+    }
+  }
+  .list-select {
+    margin: 10px 0;
+    margin-top: 20px;
+    .ant-select {
+      width: 150px;
+      text-align: center;
+    }
+  }
+}
+
+.details-modal-title {
+  p {
+    color: red;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}

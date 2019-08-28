@@ -1,0 +1,133 @@
+@import '_layout-1';
+
+#components-layout-demo-top-side-2 .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 28px 16px 0;
+  float: left;
+}
+
+li {
+  list-style: none;
+}
+
+.qsl-layout {
+  width: 100%;
+  height: 100%;
+
+  .qsl-layout-logo {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .ant-layout-header {
+    background: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.qsl-layout-nav {
+  display: flex;
+  margin-left: 50px;
+
+  li {
+    color: rgba(88, 95, 123, 1);
+    height: 35px;
+    border-radius: 17px;
+    line-height: 35px;
+    // color: #fff;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 1s all;
+  }
+
+  li.active {
+    color: #fff;
+    background: rgba(41, 96, 255, 1);
+  }
+
+  li:hover {
+    color: #fff;
+    background: rgba(41, 96, 255, 1);
+  }
+}
+
+.qsl-layout-blank {
+  flex: 1;
+}
+
+.qsl-user-news {
+  display: flex;
+  align-items: center;
+
+  .news-img-container {
+    width: 20px;
+    position: relative;
+
+    img {
+      width: 20px;
+      height: auto;
+      position: relative;
+      display: block;
+    }
+  }
+
+  .news-img-container.active::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: rgba(245, 141, 66, 1);
+    border-radius: 100%;
+    top: 0;
+    right: -5px;
+  }
+
+  span.user-img {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: #ccc;
+    border-radius: 100%;
+    margin: 0 10px 0 45px;
+  }
+
+  .user-name {
+    cursor: pointer;
+  }
+}
+
+.create-project-container {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 182px;
+    height: 55px;
+    background: #fff;
+    border: 1px #2960ff solid;
+    color: #2960ff;
+    line-height: 55px;
+    border-radius: 27px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    transition: 1s all;
+  }
+
+  button:hover {
+    background: #2960ff;
+    color: #fff;
+  }
+}

@@ -1,0 +1,13 @@
+.stepsContainer{
+    background-color: #ffffff;
+    padding:30px 50px;
+    margin:30px 0px 0px 0px;
+    .ant-steps-item-icon{
+        // background:#385efe!important;
+        border-color: #385efe!important;
+        
+    }
+    .ant-steps-item-process .ant-steps-item-icon{
+        background:#385efe
+    }
+}

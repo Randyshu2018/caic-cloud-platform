@@ -1,0 +1,416 @@
+// @import 'mixins.scss';
+@import './common';
+.text-color {
+  color: #909090;
+}
+.eju-flex {
+  display: flex;
+}
+
+.eju-flex-1 {
+  flex: 1;
+}
+
+.eju-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.eju-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.eju-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eju-flex-j {
+  justify-content: center;
+}
+
+.eju-flex-a {
+  align-items: center;
+}
+
+.formFlex .ant-row {
+  display: flex;
+}
+
+.eju-flex-between {
+  justify-content: space-between;
+}
+
+.eju-form-container {
+  .styleimg1 {
+    .ant-upload,
+    .ant-upload-list-item {
+      width: 192px;
+      height: 220px;
+    }
+  }
+
+  .styleimg2 {
+    .ant-upload,
+    .ant-upload-list-item {
+      margin-right: 60px;
+      width: 192px;
+      height: 128px;
+    }
+  }
+}
+
+.ant-upload-select-picture-card i {
+  font-size: 32px;
+  color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+  margin-top: 8px;
+  color: #666;
+}
+
+.eju-modal {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(176, 176, 176, 0.1);
+}
+
+.text-span {
+  cursor: pointer;
+  color: #3b5efe;
+}
+
+.text-span1 {
+  color: #ff3654;
+}
+
+.text-span2 {
+  color: #00e4a5;
+}
+
+.text-span3 {
+  color: #59626d;
+}
+
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #3b5efe;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+.eju {
+  &_container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 0px 0px 30px 0;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    border-radius: 8px;
+
+    & .eju-form-item-title {
+      margin-left: -30px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.eju-btn {
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 32px;
+  user-select: none;
+  position: relative;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border-color: #d9d9d9;
+}
+
+.eju-btn-grag {
+  color: #fff;
+  background-color: #999999;
+  border-color: #999999;
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-indent {
+  text-indent: 2em;
+}
+
+.size22 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #445870;
+}
+
+.eju-form-container .ant-input {
+  border-radius: 4px;
+}
+
+.eju_container {
+  .ant-input-disabled,
+  .ant-input[disabled] {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.65);
+    border-color: transparent;
+
+    &:hover {
+      border-color: transparent;
+      cursor: default;
+    }
+  }
+}
+
+.eju-form-container {
+  .ant-btn {
+    border-radius: 6px;
+    background: #3b5efe;
+    font-size: 14px;
+    color: #ffffff;
+    &.back {
+      background: #fff;
+      color: #666;
+      margin-right: 20px;
+    }
+  }
+
+  .eju-form-tip {
+    padding-top: 16px;
+    margin-bottom: 20px;
+    color: #828baa;
+    font-size: 15px;
+  }
+
+  .marg-l {
+    margin-left: 20px;
+  }
+}
+
+.eju-spin .ant-spin {
+  top: 50%;
+  margin-top: -160px;
+}
+
+.uploadFileComponent {
+  .ant-upload-list-picture-card .ant-upload-list-item-thumbnail,
+  .ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .file-name {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  .eju-flex-center {
+    height: 100%;
+  }
+
+  .anticon {
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .ant-upload-select-text,
+  .ant-upload-select-picture {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+
+    & i {
+      font-size: 32px;
+    }
+  }
+
+  .ant-upload.ant-upload-select-text,
+  .ant-upload.ant-upload-select-picture,
+  .ant-upload.ant-upload-select-picture-card {
+    &:hover {
+      border-color: #1890ff;
+      background-color: #ebefff;
+
+      & .anticon-plus-circle,
+      .ant-upload-text {
+        color: #3b5efe;
+      }
+    }
+  }
+
+  .eju-icon {
+    display: flex;
+
+    > span {
+      .anticon {
+        font-size: 18px;
+      }
+
+      margin-right: 15px;
+      font-size: 12px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+
+  // picture
+  .ant-upload.ant-upload-select-text,
+  .ant-upload.ant-upload-select-picture {
+    display: table;
+    width: 104px;
+    height: 104px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #fafafa;
+    border: 1px dashed #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+
+    .ant-upload-text {
+      margin-top: 8px;
+      color: #666;
+    }
+
+    .ant-upload {
+      display: table-cell;
+      width: 100%;
+      height: 100%;
+      padding: 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
+
+.ellipsis-2line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis-3line {
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.ellipsis-1line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

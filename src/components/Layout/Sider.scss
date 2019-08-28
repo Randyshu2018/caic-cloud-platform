@@ -1,0 +1,58 @@
+.eju-sider-menu {
+  &.ant-layout-sider {
+    background: rgba(51, 55, 68, 1);
+  }
+  .ant-menu-dark,
+  .ant-menu-dark .ant-menu-sub {
+    background-color: rgba(51, 55, 68, 1);
+  }
+  .ant-select-selection {
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+  .side-select-dark {
+    padding: 20px 6px 20px 40px;
+    background-color: #333744;
+    .ant-select-arrow {
+      color: #fff;
+      font-weight: bold;
+    }
+    .ant-select-arrow:before {
+      content: url('./assets/down.svg');
+    }
+  }
+  .ant-select-selection__rendered {
+    margin: 0;
+  }
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: rgba(51, 55, 68, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0) inset;
+  }
+  .ant-menu.ant-menu-dark .ant-menu-item-selected,
+  .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: #3b5efe;
+    margin: 0;
+  }
+  .ant-menu-vertical .ant-menu-item,
+  .ant-menu-vertical-left .ant-menu-item,
+  .ant-menu-vertical-right .ant-menu-item,
+  .ant-menu-inline .ant-menu-item,
+  .ant-menu-vertical .ant-menu-submenu-title,
+  .ant-menu-vertical-left .ant-menu-submenu-title,
+  .ant-menu-vertical-right .ant-menu-submenu-title,
+  .ant-menu-inline .ant-menu-submenu-title,
+  .ant-menu-dark .ant-menu-item-selected > a,
+  .ant-menu-dark .ant-menu-item-selected > a:hover {
+    color: #fff;
+    font-size: 16px;
+  }
+  .ant-menu-submenu-title {
+    padding-left: 46px;
+    .ant-menu-item {
+      padding-left: 56px;
+    }
+  }
+}

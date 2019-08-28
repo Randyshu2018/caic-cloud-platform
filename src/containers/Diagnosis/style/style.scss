@@ -1,0 +1,26 @@
+@import 'style-1.scss';
+
+.dia-title-container {
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(242, 241, 241, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  padding: 0 24px 33px 24px;
+  margin-bottom: 24px;
+
+  .dia-title-container-title {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    span {
+      margin-left: 10px;
+      font-size: 15px;
+      color: rgba(245, 166, 35, 1);
+    }
+  }
+}

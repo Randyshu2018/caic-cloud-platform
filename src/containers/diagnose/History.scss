@@ -1,0 +1,25 @@
+.diagnose-history {
+  background-color: #fff;
+  box-shadow: 0 2px 5px 5px rgba(245, 246, 252, 0.56);
+  border-radius: 8px;
+}
+
+.diagnose-history-header {
+  padding: 30px 30px 25px;
+}
+
+.diagnose-history-title {
+  //color: #445870;
+  .title {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #445870;
+  }
+  .tip {
+    line-height: 22px;
+    font-size: 16px;
+  }
+}
+
+.diagnose-history-content {
+}
