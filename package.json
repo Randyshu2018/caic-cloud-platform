@@ -262,7 +262,7 @@
     "http-server": "^0.11.1",
     "husky": "0.14.3",
     "ip": "^1.1.5",
-    "node-sass": "4.9.0",
+    "node-sass": "7.0.0",
     "open": "^6.4.0",
     "prettier": "1.13.5",
     "pretty-quick": "1.6.0",
